@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: lightgray; /* Set the background color for the entire page */
+      }
+      .table-container {
+        background-color: white; /* Set the background color for the container */
+        padding: 20px; /* Add some padding for better appearance */
+        width: 40%; /* Set a width for the container */
+        margin: 0 auto; /* Center the container on the page */
+        font-size: 50px; /*set the font size to 50px */
+        text-align: center; /* Aligning the text to center*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-container">
+      <script>
+        var num = prompt("Enter the Number");
+        document.write(
+          "<p>The Multiplication Table of " + num + " is this:</p>"
+        );
+        for (let i = 1; i <= 10; i++) {
+          var result = num * i;
+          document.write(num + " * " + i + " = " + result + "<br>");
+        }
+      </script>
+    </div>
+  </body>
+</html>
